@@ -15,6 +15,9 @@
 		D913B5801F88B85A0041CFD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D913B57E1F88B85A0041CFD3 /* LaunchScreen.storyboard */; };
 		D913B58B1F88B85B0041CFD3 /* MapBoxMyDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913B58A1F88B85B0041CFD3 /* MapBoxMyDemoTests.swift */; };
 		D913B5961F88B85B0041CFD3 /* MapBoxMyDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913B5951F88B85B0041CFD3 /* MapBoxMyDemoUITests.swift */; };
+		D913B5A41F88B8810041CFD3 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D913B5A31F88B8810041CFD3 /* Mapbox.framework */; };
+		D913B5A51F88B8810041CFD3 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D913B5A31F88B8810041CFD3 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D913B5F11F88F1D80041CFD3 /* example.geojson in Resources */ = {isa = PBXBuildFile; fileRef = D913B5F01F88F1D80041CFD3 /* example.geojson */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D913B5A61F88B8810041CFD3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D913B5A51F88B8810041CFD3 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D913B56F1F88B8590041CFD3 /* MapBoxMyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapBoxMyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D913B5721F88B85A0041CFD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +66,9 @@
 		D913B5911F88B85B0041CFD3 /* MapBoxMyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapBoxMyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D913B5951F88B85B0041CFD3 /* MapBoxMyDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxMyDemoUITests.swift; sourceTree = "<group>"; };
 		D913B5971F88B85B0041CFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D913B5A31F88B8810041CFD3 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		D913B5F01F88F1D80041CFD3 /* example.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.geojson; sourceTree = "<group>"; };
+		D92274CB1F890851004DE201 /* Directions.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Directions.geojson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D913B5A41F88B8810041CFD3 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +100,7 @@
 		D913B5661F88B8590041CFD3 = {
 			isa = PBXGroup;
 			children = (
+				D913B5A31F88B8810041CFD3 /* Mapbox.framework */,
 				D913B5711F88B8590041CFD3 /* MapBoxMyDemo */,
 				D913B5891F88B85B0041CFD3 /* MapBoxMyDemoTests */,
 				D913B5941F88B85B0041CFD3 /* MapBoxMyDemoUITests */,
@@ -106,6 +128,8 @@
 				D913B57E1F88B85A0041CFD3 /* LaunchScreen.storyboard */,
 				D913B5811F88B85A0041CFD3 /* Info.plist */,
 				D913B5791F88B85A0041CFD3 /* MapBoxMyDemo.xcdatamodeld */,
+				D913B5F01F88F1D80041CFD3 /* example.geojson */,
+				D92274CB1F890851004DE201 /* Directions.geojson */,
 			);
 			path = MapBoxMyDemo;
 			sourceTree = "<group>";
@@ -138,6 +162,8 @@
 				D913B56B1F88B8590041CFD3 /* Sources */,
 				D913B56C1F88B8590041CFD3 /* Frameworks */,
 				D913B56D1F88B8590041CFD3 /* Resources */,
+				D913B5A61F88B8810041CFD3 /* Embed Frameworks */,
+				D913B5A71F88B8A10041CFD3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -240,6 +266,7 @@
 			files = (
 				D913B5801F88B85A0041CFD3 /* LaunchScreen.storyboard in Resources */,
 				D913B57D1F88B85A0041CFD3 /* Assets.xcassets in Resources */,
+				D913B5F11F88F1D80041CFD3 /* example.geojson in Resources */,
 				D913B5781F88B85A0041CFD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +286,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D913B5A71F88B8A10041CFD3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D913B56B1F88B8590041CFD3 /* Sources */ = {
@@ -422,6 +465,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 286BCTD55N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MapBoxMyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThinkStudio.MapBoxMyDemo;
@@ -435,6 +482,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 286BCTD55N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MapBoxMyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThinkStudio.MapBoxMyDemo;
@@ -520,6 +571,7 @@
 				D913B59C1F88B85B0041CFD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D913B59D1F88B85B0041CFD3 /* Build configuration list for PBXNativeTarget "MapBoxMyDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +580,7 @@
 				D913B59F1F88B85B0041CFD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D913B5A01F88B85B0041CFD3 /* Build configuration list for PBXNativeTarget "MapBoxMyDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +589,7 @@
 				D913B5A21F88B85B0041CFD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
